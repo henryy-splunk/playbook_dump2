@@ -23,6 +23,10 @@ def geolocate_ip_1(action=None, success=None, container=None, results=None, hand
 
     parameters = []
 
+    parameters.append({
+        "ip": "2.2.2.2",
+    })
+
     ################################################################################
     ## Custom Code Start
     ################################################################################
@@ -33,7 +37,7 @@ def geolocate_ip_1(action=None, success=None, container=None, results=None, hand
     ## Custom Code End
     ################################################################################
 
-    phantom.act("geolocate ip", parameters=parameters, name="geolocate_ip_1")
+    phantom.act("geolocate ip", parameters=parameters, name="geolocate_ip_1", assets=["maxmind"])
 
     return
 

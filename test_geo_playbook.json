@@ -14,7 +14,7 @@
                     "targetPort": "2_in"
                 }
             ],
-            "hash": "0241c4ea1db06edf230842036f457cf116aca4d5",
+            "hash": "6f1aff98bef691e2170741363dd421d2b47a52e2",
             "nodes": {
                 "0": {
                     "data": {
@@ -56,10 +56,23 @@
                             "join": []
                         },
                         "connector": "MaxMind",
+                        "connectorConfigs": [
+                            "maxmind"
+                        ],
                         "connectorId": "c566e153-3118-4033-abda-14dd9748c91a",
+                        "connectorVersion": "v1",
                         "functionId": 1,
                         "functionName": "geolocate_ip_1",
                         "id": "2",
+                        "parameters": {
+                            "ip": "2.2.2.2"
+                        },
+                        "requiredParameters": [
+                            {
+                                "data_type": "string",
+                                "field": "ip"
+                            }
+                        ],
                         "type": "action"
                     },
                     "errors": {},
@@ -79,7 +92,7 @@
         "schema": "5.0.10",
         "version": "6.2.0.87"
     },
-    "create_time": "2023-08-31T19:29:30.848656+00:00",
+    "create_time": "2023-08-31T19:30:42.143876+00:00",
     "draft_mode": false,
     "labels": [
         "*"
